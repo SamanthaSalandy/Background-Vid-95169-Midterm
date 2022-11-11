@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="Viewport" content="with=device-width, initial-scale 1.0">
+    <title>Website with Background- Easy Tuturials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero">
+
+        <video autoplay loop muted plays-inline id="backVideo">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <img src="hamburger.png" class="menu-icon">
+        <div class="sidebar">
+            <div class="top-links">
+                <img src="arrow.png" class="arrow-icon">
+                <div>
+                    <img src="audio.png">
+                    <img src="link.png">
+                </div>
+            </div>
+
+            <h1>Elliana Katherine</h1>
+            <h3>Washington, USA</h3>
+            <p>Elliana Katherine is an American entrepreneur and the world's highest-paid CEO in 2022, she has featured multiple times on the Forbes Entrepreneur list. She is also one of the most influential people in the world in 2022.</p>
+
+            <a href="#">More Details</a>
+
+        </div>
+        <img src="play.png" id="btn">
+    </div>
+<script>
+        let backVideo = document.getElementById("backVideo");
+        let btn = document.getElementById("btn");
+
+        btn.onclick = function(){
+            backVideo.style.display = "block";
+
+            if(backVideo.paused){
+                backVideo.play();
+                btn.src ="pause.png"
+            }
+            else{
+                backVideo.pause();
+                btn.src ="play.png"
+            }
+        }
+
+</script>
+</body>
+
+</html>
